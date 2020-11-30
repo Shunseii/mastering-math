@@ -1,4 +1,3 @@
-import Navbar from "app/components/Navbar"
 import { BlitzPage, useRouter } from "blitz"
 import { useCurrentUser } from "app/hooks/useCurrentUser"
 import { Suspense } from "react"
