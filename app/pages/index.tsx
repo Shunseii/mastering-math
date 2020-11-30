@@ -3,7 +3,7 @@ import { useCurrentUser } from "app/hooks/useCurrentUser"
 import { Suspense } from "react"
 import Layout from "app/layouts/Layout"
 
-import "katex/dist/katex.min.css"
+// import "katex/dist/katex.min.css"
 
 const Home = () => {
   const router = useRouter()
@@ -11,7 +11,7 @@ const Home = () => {
 
   if (user) router.push("/courses")
 
-  router.push("/signup")
+  router.push("/login")
 
   return (
     <div>

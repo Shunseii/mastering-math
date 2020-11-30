@@ -39,7 +39,7 @@ const UserInfo = () => {
             className="flex flex-row items-center p-1 mr-4 transition duration-200 ease-in-out rounded-sm hover:bg-gray-600"
             onClick={async () => {
               await logoutMutation()
-              router.push("/")
+              router.push("/login")
             }}
           >
             <FaSignOutAlt className="mr-1" />
