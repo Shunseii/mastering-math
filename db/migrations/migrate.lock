@@ -1,3 +1,10 @@
 # Prisma Migrate lockfile v1
 
 20201128174312-initial-migration
+20201128174951-init-db
+20201128175110-solutions-to-user-model
+20201128181632-optional-user-feilds
+20201129005130-adds-completed-bool-to-solution
+20201129010110-sets-default-values-for-solution
+20201129020904-set-solution-completed-default-to-true
+20201129130257-adds-feedback-for-solution-model

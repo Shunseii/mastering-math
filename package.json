@@ -33,15 +33,24 @@
   "dependencies": {
     "@prisma/cli": "2.12.1",
     "@prisma/client": "2.12.1",
+    "autoprefixer": "10.0.4",
     "blitz": "0.26.2",
+    "dompurify": "2.2.2",
+    "final-form": "4.20.1",
+    "latex.js": "0.12.4",
+    "postcss": "8.1.10",
     "react": "0.0.0-experimental-4ead6b530",
     "react-dom": "0.0.0-experimental-4ead6b530",
     "react-error-boundary": "2.3.2",
+    "react-final-form": "6.5.2",
+    "react-icons": "4.1.0",
+    "react-katex": "2.0.2",
+    "react-latex": "2.0.0",
     "secure-password": "4.0.0",
+    "svgdom": "0.1.8",
+    "tailwindcss": "2.0.1",
     "typescript": "4.1.2",
-    "zod": "1.11.10",
-    "final-form": "4.20.1",
-    "react-final-form": "6.5.2"
+    "zod": "1.11.10"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.11.6",

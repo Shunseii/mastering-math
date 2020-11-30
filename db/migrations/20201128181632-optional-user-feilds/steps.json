@@ -1,0 +1,29 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "UpdateField",
+      "model": "Problem",
+      "field": "user",
+      "arity": "Optional"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Problem",
+      "field": "userId",
+      "arity": "Optional"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Solution",
+      "field": "user",
+      "arity": "Optional"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Solution",
+      "field": "userId",
+      "arity": "Optional"
+    }
+  ]
+}

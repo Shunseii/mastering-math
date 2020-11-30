@@ -3,7 +3,7 @@
 
 datasource db {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
+  url = "***"
 }
 
 generator client {
@@ -22,7 +22,6 @@ model User {
   role           String    @default("user")
   sessions       Session[]
   problems       Problem[]
-  solutions      Solution[]
 }
 
 model Session {
@@ -56,8 +55,8 @@ model Problem {
   name      String     
   body      String     
   solutions Solution[] 
-  user      User?       @relation(fields: [userId], references: [id])
-  userId    Int?        
+  user      User       @relation(fields: [userId], references: [id])
+  userId    Int        
   course    Course     @relation(fields: [courseId], references: [id])
   courseId  Int        
 }
@@ -67,13 +66,11 @@ model Solution {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   body      String   
-  graded    Boolean  @default(false)
-  grade     Int?      
-  feedback  String?
-  endorsed  Boolean  @default(false)
+  graded    Boolean  
+  grade     Int      
+  endorsed  Boolean  
   problem   Problem  @relation(fields: [problemId], references: [id])
   problemId Int      
-  user      User?    @relation(fields: [userId], references: [id])
-  userId    Int?      
-  completed Boolean  @default(true) 
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int      
 }
